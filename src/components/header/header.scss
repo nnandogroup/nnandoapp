@@ -1,0 +1,48 @@
+.header {
+  height: 85px;
+  background-color: #d1d9e7;
+  position: fixed;
+  width: 100%;
+
+  &__shell {
+    max-width: 75rem;
+    height: 100%;
+    margin: auto;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 3rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+
+  &__item {
+    text-decoration: none;
+    margin-right: 2.5rem;
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: #1068ee;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+  }
+}
