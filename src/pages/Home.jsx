@@ -1,10 +1,12 @@
 import { Box } from "@mui/material";
 import Header from "../components/header/Header";
+import Hero from "../components/hero/Hero";
 
 const Home = () => {
   return (
-    <Box sx={{ height: "2000px", backgroundColor: "#e3e3e3" }}>
+    <Box sx={{ height: "95vh" }}>
       <Header />
+      <Hero />
     </Box>
   );
 };

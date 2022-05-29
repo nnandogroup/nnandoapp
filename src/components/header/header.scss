@@ -1,8 +1,8 @@
 .header {
   height: 85px;
+  width: 100%;
   background-color: #d1d9e7;
   position: fixed;
-  width: 100%;
 
   &__shell {
     max-width: 75rem;
@@ -25,11 +25,9 @@
 }
 
 .nav {
-  list-style: none;
   display: flex;
 
   &__item {
-    text-decoration: none;
     margin-right: 2.5rem;
     color: #000;
     font-size: 1.125rem;
@@ -40,9 +38,5 @@
     &:hover {
       color: #1068ee;
     }
-  }
-
-  &__btn {
-    text-decoration: none;
   }
 }

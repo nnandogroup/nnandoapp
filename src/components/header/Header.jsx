@@ -32,11 +32,16 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <a href="#contact-us" className="nav__btn">
-            <Button variant="contained" color="primary">
-              Contact Us
-            </Button>
-          </a>
+          {/* <a  className="nav__btn"> */}
+          <Button
+            variant="contained"
+            href="#contact-us"
+            disableElevation
+            color="primary"
+          >
+            Contact Us
+          </Button>
+          {/* </a> */}
         </div>
       </div>
     </header>
