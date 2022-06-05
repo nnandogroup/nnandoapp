@@ -32,7 +32,6 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          {/* <a  className="nav__btn"> */}
           <Button
             variant="contained"
             href="#contact-us"
@@ -41,7 +40,6 @@ const Header = () => {
           >
             Contact Us
           </Button>
-          {/* </a> */}
         </div>
       </div>
     </header>

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        height: "50rem",
+        height: "40rem",
       }}
     >
       <Box
@@ -15,7 +15,6 @@ const Hero = () => {
           mx: "auto",
           px: "5px",
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
         }}
       >
@@ -23,14 +22,18 @@ const Hero = () => {
           direction="row"
           justifyContent="space-between"
           alignItems="center"
+          sx={{
+            width: "100%",
+          }}
         >
           <Box>
             <Typography
               sx={{
                 color: "black",
                 fontSize: "4rem",
-                fontWeight: "800",
+                fontWeight: "600",
                 lineHeight: "69px",
+                fontFamily: "Barlow",
               }}
             >
               Nnando is
@@ -40,6 +43,7 @@ const Hero = () => {
               sx={{
                 fontSize: "2rem",
                 fontWeight: "800",
+                fontFamily: "Barlow",
                 marginBottom: "1rem",
                 height: "3rem",
               }}
@@ -49,19 +53,19 @@ const Hero = () => {
                 cursor={false}
                 sequence={[
                   "Agriculture",
-                  2000,
+                  4000,
                   "Real Estate",
-                  2000,
+                  4000,
                   "Oil & Gas",
-                  2000,
+                  4000,
                   "Health Care",
-                  2000,
+                  4000,
                   "Lifestyle",
-                  2000,
+                  4000,
                   " Entertainment",
-                  2000,
+                  4000,
                 ]}
-                wrapper="span"
+                wrapper="a"
                 repeat={Infinity}
               />{" "}
             </Typography>

@@ -1,0 +1,82 @@
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+
+  &__tab-list {
+    // border-bottom: 1px solid #000;
+    // margin: 0 0 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__tab {
+    // border: 1px solid transparent;
+    // border-bottom: none;
+    background-color: #1068ee;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #fff;
+    width: 215px;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 1.5rem;
+    font-weight: 700;
+
+    &:nth-child(1) {
+      border-radius: 10px 0 0 0;
+    }
+
+    &:nth-child(3) {
+      width: 430px;
+    }
+
+    &:nth-child(5) {
+      border-radius: 0 10px 0 0;
+    }
+
+    &--selected {
+      background: #f3f5f9;
+      // border-color: #000;
+      color: #1068ee;
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+
+    &:focus {
+      outline: none;
+
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   height: 5px;
+      //   left: -4px;
+      //   right: -4px;
+      //   bottom: -5px;
+      //   background: #fff;
+      // }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px;
+      height: 17rem;
+    }
+  }
+}
