@@ -1,8 +1,13 @@
 .header {
   height: 85px;
   width: 100%;
-  background-color: #d1d9e7;
-  // position: fixed;
+  background: transparent;
+  position: fixed;
+
+  &.active {
+    background: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(5px);
+  }
 
   &__shell {
     max-width: 75rem;

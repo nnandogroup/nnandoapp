@@ -51,6 +51,7 @@ const TabPanelButton = ({ children, link, disabled }) => {
 const NavTabs = () => (
   <Box
     sx={{
+      mt: "2rem",
       maxWidth: "75rem",
       px: "5px",
       mx: "auto",

@@ -1,11 +1,21 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import TypeAnimation from "react-type-animation";
 
 const Hero = () => {
+  const scrollToServices = () => {
+    document
+      .getElementById("about")
+      .scrollIntoView({ behavior: "smooth", alignToTop: true });
+  };
+
   return (
     <Box
       sx={{
-        height: "40rem",
+        height: "100vh",
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(${require("../../assets/images/HeroImage.webp")})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#212121",
       }}
     >
       <Box
@@ -18,94 +28,81 @@ const Hero = () => {
           alignItems: "center",
         }}
       >
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-          sx={{
-            width: "100%",
-          }}
-        >
-          <Box>
-            <Typography
-              sx={{
-                color: "black",
-                fontSize: "4rem",
-                fontWeight: "600",
-                lineHeight: "69px",
-                fontFamily: "Barlow",
-              }}
-            >
-              Nnando is
-            </Typography>
-            <Typography
-              color="primary"
-              sx={{
-                fontSize: "2rem",
-                fontWeight: "800",
-                fontFamily: "Barlow",
-                marginBottom: "1rem",
-                height: "3rem",
-              }}
-            >
-              -{" "}
-              <TypeAnimation
-                cursor={false}
-                sequence={[
-                  "Agriculture",
-                  4000,
-                  "Real Estate",
-                  4000,
-                  "Oil & Gas",
-                  4000,
-                  "Health Care",
-                  4000,
-                  "Lifestyle",
-                  4000,
-                  " Entertainment",
-                  4000,
-                ]}
-                wrapper="a"
-                repeat={Infinity}
-              />{" "}
-            </Typography>
-            <Typography
-              sx={{
-                color: "black",
-                fontSize: "1rem",
-                fontWeight: "400",
-                lineHeight: "28px",
-                marginBottom: "2rem",
-              }}
-            >
-              We are a fast growing multi-faceted organisation with business
-              <br />
-              tentacles in several industries to bring top-notch services
-            </Typography>
-            <Button
-              variant="outlined"
-              size="large"
-              sx={{
-                color: "#000",
-                borderColor: "#000",
-                fontSize: "1.25rem",
-                fontWeight: "700",
-              }}
-            >
-              Learn More
-            </Button>
-          </Box>
-          <Box
-            component="img"
-            src={require("../../assets/images/Together.webp")}
-            alt="together"
+        <Box>
+          <Typography
+            color="white"
             sx={{
-              width: "40rem",
-              height: "27rem",
-              borderRadius: "10px",
+              fontSize: "2rem",
+              fontWeight: "800",
+              fontFamily: "Barlow",
+              // marginBottom: "1rem",
+              height: "3rem",
             }}
-          />
-        </Stack>
+          >
+            <TypeAnimation
+              cursor={true}
+              sequence={[
+                "Agriculture",
+                4000,
+                "Real Estate",
+                4000,
+                "Oil & Gas",
+                4000,
+                "Health Care",
+                4000,
+                "Lifestyle",
+                4000,
+                " Entertainment",
+                4000,
+              ]}
+              wrapper="a"
+              repeat={Infinity}
+            />
+          </Typography>
+          <Typography
+            sx={{
+              color: "white",
+              fontSize: "5rem",
+              fontWeight: "600",
+              lineHeight: "69px",
+              fontFamily: "Barlow",
+              marginBottom: "1rem",
+            }}
+          >
+            Nnando Groups
+          </Typography>
+          <Typography
+            sx={{
+              color: "white",
+              fontSize: "1rem",
+              fontWeight: "400",
+              lineHeight: "28px",
+              marginBottom: "2rem",
+            }}
+          >
+            Nnando Groups is a fast growing multi-faceted
+            <br />
+            organisation with business tentacles in
+            <br />
+            several industries delivering high-quality
+            <br />
+            services to all our customers.
+          </Typography>
+          <Button
+            variant="outlined"
+            size="large"
+            sx={{
+              color: "white",
+              borderColor: "white",
+              fontSize: "1.25rem",
+              fontWeight: "700",
+              borderRadius: "50px",
+            }}
+            onClick={scrollToServices}
+          >
+            Learn More
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

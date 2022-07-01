@@ -1,10 +1,22 @@
 import "./header.scss";
-import { KeyboardArrowDownRounded } from "@mui/icons-material";
 import { Button } from "@mui/material";
+import { useState } from "react";
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY > 85) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <header className="header">
+    <header className={navbar ? "header active" : "header"}>
       <div className="header__shell">
         <div>
           <img
@@ -23,7 +35,6 @@ const Header = () => {
             <li>
               <a href="/" className="nav__item">
                 Business
-                <KeyboardArrowDownRounded />
               </a>
             </li>
             <li>

@@ -8,8 +8,14 @@ export const theme = createTheme({
     secondary: {
       main: "#d1d9e7",
     },
+    black: {
+      main: "#000",
+    },
   },
   typography: {
+    button: {
+      textTransform: "none",
+    },
     fontFamily: "Manrope",
   },
 });
