@@ -1,5 +1,4 @@
-import "./header.scss";
-import { Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { useState } from "react";
 
 const Header = () => {
@@ -16,7 +15,7 @@ const Header = () => {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <header className={navbar ? "header active" : "header"}>
+    <Box component="header" className={navbar ? "header active" : "header"}>
       <div className="header__shell">
         <div>
           <img
@@ -52,8 +51,13 @@ const Header = () => {
             Contact Us
           </Button>
         </div>
+        <div className="mobile__nav">
+          <div className="mobile__nav--1"></div>
+          <div className="mobile__nav--2"></div>
+          <div className="mobile__nav--3"></div>
+        </div>
       </div>
-    </header>
+    </Box>
   );
 };
 

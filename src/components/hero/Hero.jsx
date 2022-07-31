@@ -1,7 +1,8 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, useTheme } from "@mui/material";
 import TypeAnimation from "react-type-animation";
 
 const Hero = () => {
+  const theme = useTheme();
   const scrollToServices = () => {
     document
       .getElementById("about")
@@ -15,7 +16,7 @@ const Hero = () => {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(${require("../../assets/images/HeroImage.webp")})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundColor: "#212121",
+        backgroundPosition: "center",
       }}
     >
       <Box
@@ -26,6 +27,9 @@ const Hero = () => {
           px: "5px",
           display: "flex",
           alignItems: "center",
+          [theme.breakpoints.down("lg")]: {
+            px: "20px",
+          },
         }}
       >
         <Box>
@@ -35,7 +39,6 @@ const Hero = () => {
               fontSize: "2rem",
               fontWeight: "800",
               fontFamily: "Barlow",
-              // marginBottom: "1rem",
               height: "3rem",
             }}
           >

@@ -45,3 +45,17 @@
     }
   }
 }
+
+.mobile__nav {
+  display: none;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
