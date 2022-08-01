@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import FooterNav from "../partials/FooterNav";
-import FooterIcons from "../partials/FooterIcons";
-import FooterForm from "../partials/FooterForm";
+import FooterNav from "./partials/FooterNav";
+import FooterIcons from "./partials/FooterIcons";
+import FooterForm from "./partials/FooterForm";
 
 const Footer = () => {
   return (
