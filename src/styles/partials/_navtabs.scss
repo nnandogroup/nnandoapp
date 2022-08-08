@@ -1,78 +1,78 @@
 .react-tabs {
-  -webkit-tap-highlight-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 10px;
+	-webkit-tap-highlight-color: transparent;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 10px;
 
-  &__tab-list {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
+	&__tab-list {
+		padding: 0;
+		display: flex;
+		justify-content: center;
+	}
 
-  &__tab {
-    background-color: #1068ee;
-    bottom: -1px;
-    position: relative;
-    list-style: none;
-    padding: 6px 12px;
-    cursor: pointer;
-    color: #fff;
-    width: 215px;
-    height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: 1.5rem;
-    font-weight: 700;
+	&__tab {
+		background-color: #1068ee;
+		bottom: -1px;
+		position: relative;
+		list-style: none;
+		padding: 6px 12px;
+		cursor: pointer;
+		color: #fff;
+		width: 215px;
+		height: 3.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-style: 1.5rem;
+		font-weight: 700;
 
-    &:nth-child(1) {
-      border-radius: 10px 0 0 0;
-    }
+		&:nth-child(1) {
+			border-radius: 10px 0 0 0;
+		}
 
-    &:nth-child(3) {
-      width: 430px;
-    }
+		&:nth-child(3) {
+			width: 430px;
+		}
 
-    &:nth-child(5) {
-      border-radius: 0 10px 0 0;
-    }
+		&:nth-child(5) {
+			border-radius: 0 10px 0 0;
+		}
 
-    &--selected {
-      background: #f3f8ff;
-      // border-color: #000;
-      color: #1068ee;
-    }
+		&--selected {
+			background: #f3f8ff;
+			// border-color: #000;
+			color: #1068ee;
+		}
 
-    &--disabled {
-      color: GrayText;
-      cursor: default;
-    }
+		&--disabled {
+			color: GrayText;
+			cursor: default;
+		}
 
-    &:focus {
-      outline: none;
+		&:focus {
+			outline: none;
 
-      // &:after {
-      //   content: "";
-      //   position: absolute;
-      //   height: 5px;
-      //   left: -4px;
-      //   right: -4px;
-      //   bottom: -5px;
-      //   background: #fff;
-      // }
-    }
-  }
+			// &:after {
+			//   content: "";
+			//   position: absolute;
+			//   height: 5px;
+			//   left: -4px;
+			//   right: -4px;
+			//   bottom: -5px;
+			//   background: #fff;
+			// }
+		}
+	}
 
-  &__tab-panel {
-    display: none;
+	&__tab-panel {
+		display: none;
 
-    &--selected {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #fff;
-      border-radius: 0 0 10px 10px;
-      height: 17rem;
-    }
-  }
+		&--selected {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			border-radius: 0 0 10px 10px;
+			height: 17rem;
+		}
+	}
 }

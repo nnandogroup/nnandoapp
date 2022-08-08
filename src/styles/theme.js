@@ -1,21 +1,30 @@
 import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#1068ee",
-    },
-    secondary: {
-      main: "#d1d9e7",
-    },
-    black: {
-      main: "#000",
-    },
-  },
-  typography: {
-    button: {
-      textTransform: "none",
-    },
-    fontFamily: "Manrope",
-  },
+	palette: {
+		primary: {
+			main: "#1068ee",
+		},
+		secondary: {
+			main: "#d1d9e7",
+		},
+		black: {
+			main: "#000",
+		},
+	},
+	typography: {
+		button: {
+			textTransform: "none",
+		},
+		fontFamily: "Manrope",
+	},
+	breakpoints: {
+		values: {
+			xs: 0,
+			sm: 600,
+			md: 900,
+			lg: 1200,
+			xl: 1536,
+		},
+	},
 });

@@ -3,15 +3,28 @@
 @import "partials/breakpoint";
 @import "partials/header";
 @import "partials/navtabs";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Manrope";
+	list-style: none;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Manrope";
-  list-style: none;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	// color: $dark;
+}
+
+#root {
+	height: 100%;
 }
