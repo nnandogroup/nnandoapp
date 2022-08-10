@@ -1,32 +1,32 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
 const About = () => {
   return (
     <Box>
       <Typography
-        color="initial"
+        color='initial'
         sx={{
-          fontWeight: "800",
-          fontSize: "2.5rem",
-          mt: "100px",
-          mb: "1rem",
-          textAlign: "center",
+          fontWeight: '800',
+          fontSize: '2.5rem',
+          mt: '100px',
+          mb: '1rem',
+          textAlign: 'center',
         }}
-        id="about"
+        id='about'
       >
         About Us
       </Typography>
       <Typography
-        color="initial"
+        color='initial'
         sx={{
-          fontWeight: "400",
-          fontSize: "1.3rem",
-          mb: "56px",
-          maxWidth: "75rem",
-          mx: "auto",
-          px: "5px",
-          textAlign: "center",
+          fontWeight: '400',
+          fontSize: '1.3rem',
+          mb: '56px',
+          maxWidth: '75rem',
+          mx: 'auto',
+          px: '5px',
+          textAlign: 'center',
         }}
       >
         Nnando Groups is a fast-growing multi-faceted organization with business
@@ -41,7 +41,7 @@ const About = () => {
         logistics, and lastly, lifestyle and entertainment.
       </Typography>
     </Box>
-  );
-};
+  )
+}
 
-export default About;
+export default About

@@ -1,86 +1,86 @@
-import { Box, Button, Typography, useTheme } from "@mui/material";
-import TypeAnimation from "react-type-animation";
+import { Box, Button, Typography, useTheme } from '@mui/material'
+import TypeAnimation from 'react-type-animation'
 
 const Hero = () => {
-  const theme = useTheme();
+  const theme = useTheme()
   const scrollToServices = () => {
     document
-      .getElementById("about")
-      .scrollIntoView({ behavior: "smooth", alignToTop: true });
-  };
+      .getElementById('about')
+      .scrollIntoView({ behavior: 'smooth', alignToTop: true })
+  }
 
   return (
     <Box
       sx={{
-        height: "100vh",
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(${require("../../assets/images/HeroImage.webp")})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        height: '100vh',
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(${require('../../assets/images/HeroImage.webp')})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
       }}
     >
       <Box
         sx={{
-          maxWidth: "75rem",
-          height: "100%",
-          mx: "auto",
-          px: "5px",
-          display: "flex",
-          alignItems: "center",
-          [theme.breakpoints.down("lg")]: {
-            px: "20px",
+          maxWidth: '75rem',
+          height: '100%',
+          mx: 'auto',
+          px: '5px',
+          display: 'flex',
+          alignItems: 'center',
+          [theme.breakpoints.down('lg')]: {
+            px: '20px',
           },
         }}
       >
         <Box>
           <Typography
-            color="white"
+            color='white'
             sx={{
-              fontSize: "2rem",
-              fontWeight: "800",
-              fontFamily: "Barlow",
-              height: "3rem",
+              fontSize: '2rem',
+              fontWeight: '800',
+              fontFamily: 'Barlow',
+              height: '3rem',
             }}
           >
             <TypeAnimation
               cursor={true}
               sequence={[
-                "Agriculture",
+                'Agriculture',
                 4000,
-                "Real Estate",
+                'Real Estate',
                 4000,
-                "Oil & Gas",
+                'Oil & Gas',
                 4000,
-                "Health Care",
+                'Health Care',
                 4000,
-                "Lifestyle",
+                'Lifestyle',
                 4000,
-                " Entertainment",
+                ' Entertainment',
                 4000,
               ]}
-              wrapper="a"
+              wrapper='a'
               repeat={Infinity}
             />
           </Typography>
           <Typography
             sx={{
-              color: "white",
-              fontSize: "5rem",
-              fontWeight: "600",
-              lineHeight: "69px",
-              fontFamily: "Barlow",
-              marginBottom: "1rem",
+              color: 'white',
+              fontSize: '5rem',
+              fontWeight: '600',
+              lineHeight: '69px',
+              fontFamily: 'Barlow',
+              marginBottom: '1rem',
             }}
           >
             Nnando Groups
           </Typography>
           <Typography
             sx={{
-              color: "white",
-              fontSize: "1rem",
-              fontWeight: "400",
-              lineHeight: "28px",
-              marginBottom: "2rem",
+              color: 'white',
+              fontSize: '1rem',
+              fontWeight: '400',
+              lineHeight: '28px',
+              marginBottom: '2rem',
             }}
           >
             Nnando Groups is a fast growing multi-faceted
@@ -92,14 +92,14 @@ const Hero = () => {
             services to all our customers.
           </Typography>
           <Button
-            variant="outlined"
-            size="large"
+            variant='outlined'
+            size='large'
             sx={{
-              color: "white",
-              borderColor: "white",
-              fontSize: "1.25rem",
-              fontWeight: "700",
-              borderRadius: "50px",
+              color: 'white',
+              borderColor: 'white',
+              fontSize: '1.25rem',
+              fontWeight: '700',
+              borderRadius: '50px',
             }}
             onClick={scrollToServices}
           >
@@ -108,7 +108,7 @@ const Hero = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
