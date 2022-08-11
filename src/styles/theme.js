@@ -15,6 +15,7 @@ export const theme = createTheme({
   typography: {
     button: {
       textTransform: 'none',
+      color: '#fff',
     },
     fontFamily: 'Manrope',
   },

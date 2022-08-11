@@ -1,9 +1,9 @@
+import React from 'react'
 import { Box, Button } from '@mui/material'
 import { useState } from 'react'
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false)
-
   const changeBackground = () => {
     if (window.scrollY > 85) {
       setNavbar(true)
@@ -13,6 +13,11 @@ const Header = () => {
   }
 
   window.addEventListener('scroll', changeBackground)
+  const [clicked, setClicked] = useState(false)
+
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
 
   return (
     <Box component='header' className={navbar ? 'header active' : 'header'}>
@@ -24,8 +29,8 @@ const Header = () => {
             className='header__logo'
           />
         </div>
-        <div className='header__nav'>
-          <ul className='nav'>
+        <nav>
+          <ul className={clicked ? 'menu-list' : 'menu-list close'}>
             <li>
               <a href='/' className='nav__item'>
                 Home
@@ -41,21 +46,22 @@ const Header = () => {
                 About
               </a>
             </li>
+            <li>
+              <Button
+                className='nav__item'
+                variant='contained'
+                href='#contact-us'
+                disableElevation
+                color='primary'
+              >
+                Contact Us
+              </Button>
+            </li>
           </ul>
-          <Button
-            variant='contained'
-            href='#contact-us'
-            disableElevation
-            color='primary'
-          >
-            Contact Us
-          </Button>
-        </div>
-        <div className='mobile__nav'>
-          <div className='mobile__nav--1'></div>
-          <div className='mobile__nav--2'></div>
-          <div className='mobile__nav--3'></div>
-        </div>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+          </div>
+        </nav>
       </div>
     </Box>
   )

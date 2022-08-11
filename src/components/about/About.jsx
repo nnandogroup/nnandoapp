@@ -21,11 +21,11 @@ const About = () => {
         color='initial'
         sx={{
           fontWeight: '400',
-          fontSize: '1.3rem',
+          fontSize: '1.2rem',
           mb: '56px',
           maxWidth: '75rem',
           mx: 'auto',
-          px: '5px',
+          px: '16px',
           textAlign: 'center',
         }}
       >

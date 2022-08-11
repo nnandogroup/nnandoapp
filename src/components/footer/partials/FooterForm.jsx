@@ -5,9 +5,11 @@ import {
   FormControl,
   OutlinedInput,
   Typography,
+  useTheme,
 } from '@mui/material'
 
 const FooterForm = () => {
+  const theme = useTheme()
   const [mail, setMail] = useState('')
 
   return (
@@ -18,6 +20,10 @@ const FooterForm = () => {
           fontWeight: 'bold',
           textAlign: 'right',
           mb: '1rem',
+          [theme.breakpoints.down('md')]: {
+            textAlign: 'center',
+            fontSize: '1.4rem',
+          },
         }}
       >
         Subscribe to our Newsletter
@@ -29,6 +35,13 @@ const FooterForm = () => {
           alignItems: 'center',
           justifyContent: 'right',
           width: '600px',
+          [theme.breakpoints.down('md')]: {
+            justifyContent: 'center',
+          },
+          [theme.breakpoints.down('sm')]: {
+            display: 'flex',
+            flexDirection: 'column',
+          },
         }}
       >
         <FormControl variant='outlined'>
@@ -38,6 +51,11 @@ const FooterForm = () => {
             value={mail}
             onChange={(e) => setMail(e.target.value)}
             size='small'
+            sx={{
+              [theme.breakpoints.down('sm')]: {
+                marginBottom: '1rem',
+              },
+            }}
           />
         </FormControl>
         <Button

@@ -1,9 +1,11 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme } from '@mui/material'
 import FooterNav from './partials/FooterNav'
 import FooterIcons from './partials/FooterIcons'
 import FooterForm from './partials/FooterForm'
 
 const Footer = () => {
+  const theme = useTheme()
+
   return (
     <>
       <Box
@@ -25,12 +27,20 @@ const Footer = () => {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              padding: '1rem 2rem 1rem 2rem',
+              paddingBlock: '1rem',
+              [theme.breakpoints.down('md')]: {
+                display: 'flex',
+                flexDirection: 'column',
+              },
             }}
           >
             <Box
               sx={{
                 flexGrow: 1,
+                [theme.breakpoints.down('md')]: {
+                  marginRight: 'auto',
+                  marginLeft: 'auto',
+                },
               }}
             >
               <Box
@@ -48,11 +58,21 @@ const Footer = () => {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              px: '2rem',
+              // px: "2rem",
               mb: '1rem',
+              [theme.breakpoints.down('md')]: {
+                display: 'flex',
+                flexDirection: 'column',
+              },
             }}
           >
-            <FooterNav />
+            <FooterNav
+              sx={{
+                [theme.breakpoints.down('md')]: {
+                  display: 'flex',
+                },
+              }}
+            />
             <FooterIcons />
           </Box>
           <Box
