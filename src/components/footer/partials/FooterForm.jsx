@@ -47,7 +47,7 @@ const FooterForm = () => {
         <FormControl variant='outlined'>
           <OutlinedInput
             placeholder='Enter your email'
-            color='black'
+            color='primary'
             value={mail}
             onChange={(e) => setMail(e.target.value)}
             size='small'

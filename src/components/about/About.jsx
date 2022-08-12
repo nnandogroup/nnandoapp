@@ -3,12 +3,16 @@ import React from 'react'
 
 const About = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        px: '2rem',
+      }}
+    >
       <Typography
         color='initial'
         sx={{
           fontWeight: '800',
-          fontSize: '2.5rem',
+          fontSize: '2rem',
           mt: '100px',
           mb: '1rem',
           textAlign: 'center',
@@ -21,11 +25,11 @@ const About = () => {
         color='initial'
         sx={{
           fontWeight: '400',
-          fontSize: '1.2rem',
+          fontSize: '1rem',
           mb: '56px',
           maxWidth: '75rem',
           mx: 'auto',
-          px: '16px',
+
           textAlign: 'center',
         }}
       >

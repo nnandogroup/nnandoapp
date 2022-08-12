@@ -1,8 +1,9 @@
 import React from 'react'
-import { Box, Button } from '@mui/material'
+import { Box, Button, useTheme } from '@mui/material'
 import { useState } from 'react'
 
 const Header = () => {
+  const theme = useTheme()
   const [navbar, setNavbar] = useState(false)
   const changeBackground = () => {
     if (window.scrollY > 85) {
@@ -20,7 +21,15 @@ const Header = () => {
   }
 
   return (
-    <Box component='header' className={navbar ? 'header active' : 'header'}>
+    <Box
+      sx={{
+        [theme.breakpoints.down('sm')]: {
+          paddingLeft: '1rem',
+        },
+      }}
+      component='header'
+      className={navbar ? 'header active' : 'header'}
+    >
       <div className='header__shell'>
         <div>
           <img

@@ -19,6 +19,9 @@ const Footer = () => {
             maxWidth: '75rem',
             mx: 'auto',
             py: '2rem',
+            [theme.breakpoints.down('lg')]: {
+              px: '2rem',
+            },
           }}
         >
           <Box

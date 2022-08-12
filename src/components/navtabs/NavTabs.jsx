@@ -66,6 +66,31 @@ const NavTabs = () => {
         pt: '1rem',
       }}
     >
+      <Typography
+        sx={{
+          color: 'black',
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          lineHeight: '1.5',
+          fontFamily: 'Barlow',
+          textAlign: 'center',
+        }}
+      >
+        What we do
+      </Typography>
+      <Typography
+        sx={{
+          color: '#1068ee',
+          fontSize: '2.5rem',
+          fontWeight: '600',
+
+          fontFamily: 'Barlow',
+          marginBottom: '2rem',
+          textAlign: 'center',
+        }}
+      >
+        Our Business Areas
+      </Typography>
       <Tabs>
         <TabList>
           <Tab>Agriculture</Tab>
