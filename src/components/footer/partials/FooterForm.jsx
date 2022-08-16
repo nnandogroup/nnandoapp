@@ -34,7 +34,7 @@ const FooterForm = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'right',
-          width: '600px',
+          width: '100%',
           [theme.breakpoints.down('md')]: {
             justifyContent: 'center',
           },

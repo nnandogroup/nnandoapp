@@ -81,6 +81,7 @@ const Footer = () => {
           <Box
             sx={{
               pt: '1rem',
+              width: '100%',
               maxWidth: '75rem',
               mx: 'auto',
               borderTop: '1px solid #000',
