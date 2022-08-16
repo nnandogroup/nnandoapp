@@ -6,7 +6,7 @@ const Header = () => {
   const theme = useTheme()
   const [navbar, setNavbar] = useState(false)
   const changeBackground = () => {
-    if (window.scrollY > 85) {
+    if (window.scrollY > 5) {
       setNavbar(true)
     } else {
       setNavbar(false)
@@ -67,10 +67,10 @@ const Header = () => {
               </Button>
             </li>
           </ul>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-          </div>
         </nav>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        </div>
       </div>
     </Box>
   )

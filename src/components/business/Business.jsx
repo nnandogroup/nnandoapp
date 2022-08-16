@@ -44,7 +44,14 @@ const Business = () => {
           Our Business Areas
         </Typography>
 
-        <Box component='div' className='card-container'>
+        <Box
+          component='div'
+          className='card-container'
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           <Box component='div' className='card-column'>
             <Box
               component='img'
@@ -79,7 +86,14 @@ const Business = () => {
           </Box>
         </Box>
 
-        <Box component='div' className='card-container'>
+        <Box
+          component='div'
+          className='card-container'
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           <Box component='div' className='card-column'>
             <h1>Real Estate</h1>
             <p
@@ -114,7 +128,14 @@ const Business = () => {
           </Box>
         </Box>
 
-        <Box component='div' className='card-container'>
+        <Box
+          component='div'
+          className='card-container'
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           <Box component='div' className='card-column'>
             <Box
               component='img'
@@ -149,7 +170,14 @@ const Business = () => {
           </Box>
         </Box>
 
-        <Box component='div' className='card-container'>
+        <Box
+          component='div'
+          className='card-container'
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           <Box component='div' className='card-column'>
             <h1>Oil and Gas</h1>
             <p
@@ -184,7 +212,14 @@ const Business = () => {
           </Box>
         </Box>
 
-        <Box component='div' className='card-container'>
+        <Box
+          component='div'
+          className='card-container'
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           <Box component='div' className='card-column'>
             <Box
               component='img'
@@ -204,15 +239,17 @@ const Business = () => {
           </Box>
           <Box component='div' className='card-column'>
             <h1>Health Care</h1>
-            <p
+            <Box
+              component='p'
               sx={{
                 mb: '2rem',
+                textAlign: 'justify',
               }}
               className='business-content-text'
             >
               We are a fast growing multi-faceted organisation with business
               tentacles in several industries to bring top-notch services.
-            </p>
+            </Box>
             <Button color='primary' variant='outlined' link={'farm.nnando.com'}>
               Go to Nnando Farms
             </Button>

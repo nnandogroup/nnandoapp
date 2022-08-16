@@ -84,7 +84,7 @@ nav {
   color: #fff;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .header {
     height: 85px;
     width: 100%;
@@ -109,6 +109,11 @@ nav {
       height: 3rem;
     }
   }
+
+  nav {
+    display: none;
+  }
+
   .menu-list li a {
     font-size: 14px;
     margin-left: 10px;
