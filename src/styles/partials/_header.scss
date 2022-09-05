@@ -3,6 +3,7 @@
   width: 100%;
   background: transparent;
   position: fixed;
+  z-index: 99;
 
   &.active {
     background: hsla(0, 0%, 100%, 0.8);
@@ -18,44 +19,215 @@
     align-items: center;
     justify-content: space-between;
   }
-
   &__logo {
     height: 3rem;
   }
-
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
 }
 
-.nav {
+nav {
+  width: 75rem;
+  height: 100%;
+  background: transparent;
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  // z-index: 99;
 
-  &__item {
-    margin-right: 2.5rem;
-    color: #000;
-    font-size: 1.125rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
+  margin: auto;
+}
 
-    &:hover {
-      color: #1068ee;
+.fas {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 20px;
+}
+.menu-icon .fa-times {
+  transform: rotate(360deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-icon .fa-bars {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  color: #1068ee;
+}
+
+.menu-list li a {
+  margin-left: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.menu-list li a:hover {
+  background-color: #fff;
+  border-radius: 2px;
+  color: #1068ee;
+  transition: all 0.5s ease-in-out;
+}
+.menu-list li:last-child {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    height: 85px;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    z-index: 99;
+
+    &.active {
+      background: hsla(0, 0%, 100%, 0.8);
+      backdrop-filter: blur(5px);
+    }
+    //    &__shell {
+    //   max-width: 75rem;
+    //   height: 100%;
+    //   margin: auto;
+    //   padding: 0 5px;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    // }
+    &__logo {
+      height: 3rem;
     }
   }
-}
 
-.mobile__nav {
-  display: none;
-}
-
-@media (max-width: $breakpoint-tablet) {
-  * {
-    overflow-x: hidden;
+  nav {
+    display: none;
   }
 
-  .header__nav {
-    display: none;
+  .menu-list li a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 28px;
+    color: #1068ee;
+    justify-content: center;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    right: 0;
+    top: 84px;
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+  }
+
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-list li a:hover {
+    color: #fff;
+    background: #1068ee;
+  }
+  .menu-list li:last-child {
+    margin-bottom: 0px;
+  }
+
+  .menu-list li a,
+  .menu-list li:last-child a {
+    width: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .menu-list.close {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: 85px;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+
+    &.active {
+      background: hsla(0, 0%, 100%, 0.8);
+      backdrop-filter: blur(5px);
+    }
+  }
+  .menu-list li a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 28px;
+    color: #1068ee;
+    justify-content: center;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    right: 0;
+    top: 84px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-list li a:hover {
+    color: #fff;
+    background: #1068ee;
+  }
+  .menu-list li:last-child {
+    margin-bottom: 0px;
+  }
+
+  .menu-list li a,
+  .menu-list li:last-child a {
+    width: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .menu-list.close {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
   }
 }

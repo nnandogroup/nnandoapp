@@ -30,6 +30,12 @@ const Hero = () => {
           [theme.breakpoints.down('lg')]: {
             px: '20px',
           },
+          [theme.breakpoints.down('md')]: {
+            px: '20px',
+          },
+          [theme.breakpoints.down('sm')]: {
+            Height: '400px',
+          },
         }}
       >
         <Box>
@@ -40,6 +46,9 @@ const Hero = () => {
               fontWeight: '800',
               fontFamily: 'Barlow',
               height: '3rem',
+              [theme.breakpoints.down('sm')]: {
+                marginTop: '4rem',
+              },
             }}
           >
             <TypeAnimation
