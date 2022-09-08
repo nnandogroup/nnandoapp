@@ -131,7 +131,6 @@ nav {
   .menu-list {
     flex-direction: column;
     width: 100%;
-    max-width: 1000px;
     position: absolute;
     background: hsla(0, 0%, 100%, 0.8);
     backdrop-filter: blur(5px);
@@ -196,7 +195,6 @@ nav {
   .menu-list {
     flex-direction: column;
     width: 100%;
-    max-width: 450px;
     position: absolute;
     background: hsla(0, 0%, 100%, 0.8);
     backdrop-filter: blur(5px);

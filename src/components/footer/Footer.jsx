@@ -43,6 +43,7 @@ const Footer = () => {
                 [theme.breakpoints.down('md')]: {
                   marginRight: 'auto',
                   marginLeft: 'auto',
+                  // mx: 'auto',
                 },
               }}
             >
@@ -61,7 +62,6 @@ const Footer = () => {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              // px: "2rem",
               mb: '1rem',
               [theme.breakpoints.down('md')]: {
                 display: 'flex',
@@ -81,7 +81,6 @@ const Footer = () => {
           <Box
             sx={{
               pt: '1rem',
-              width: '100%',
               maxWidth: '75rem',
               mx: 'auto',
               borderTop: '1px solid #000',
