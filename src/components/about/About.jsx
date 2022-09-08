@@ -7,7 +7,7 @@ const About = () => {
       sx={{
         marginTop: '2rem',
         width: '100%',
-        height: '600px',
+        height: '650px',
         padding: '4rem',
         position: 'relative',
         clipPath: 'polygon(0 2%, 100% 0, 100% 100%, 0% 100%)',
@@ -63,9 +63,10 @@ const About = () => {
             textAlign: 'center',
             [theme.breakpoints.down('md')]: {
               mt: '1rem',
+              fontSize: '2rem',
             },
             [theme.breakpoints.down('sm')]: {
-              fontSize: '1.5rem',
+              mt: '2rem',
             },
           }}
           id='about'
@@ -82,9 +83,11 @@ const About = () => {
             mx: 'auto',
             px: '5px',
             textAlign: 'center',
+            [theme.breakpoints.down('md')]: {
+              fontSize: '1rem',
+            },
 
             [theme.breakpoints.down('sm')]: {
-              fontSize: '1rem',
               maxWidth: '100vw',
             },
           }}
