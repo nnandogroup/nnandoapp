@@ -11,10 +11,15 @@ const BusinessHeader = () => {
           fontSize: '1.5rem',
           fontWeight: '600',
           lineHeight: '1.5',
-          marginTop: '2rem',
+          marginTop: '6rem',
+          marginBottom: '-16px',
           fontFamily: 'Barlow',
           textAlign: 'center',
+          [theme.breakpoints.down('sm')]: {
+            marginBottom: 0,
+          },
         }}
+        id='business'
       >
         What we do
       </Typography>
@@ -25,10 +30,9 @@ const BusinessHeader = () => {
           fontWeight: '600',
 
           fontFamily: 'Barlow',
-          marginBottom: '2rem',
           textAlign: 'center',
           [theme.breakpoints.down('sm')]: {
-            lineHeight: '48px',
+            lineHeight: '24px',
             fontSize: '2rem',
           },
         }}

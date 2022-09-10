@@ -59,7 +59,6 @@ const NavTabs = () => {
         [theme.breakpoints.down('md')]: {
           display: 'none',
         },
-        mt: '2rem',
         maxWidth: '75rem',
         px: '5px',
         mx: 'auto',

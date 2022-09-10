@@ -4,16 +4,16 @@ import { useState } from 'react'
 
 const Header = () => {
   const theme = useTheme()
-  const [navbar, setNavbar] = useState(false)
-  const changeBackground = () => {
-    if (window.scrollY > 5) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
-    }
-  }
+  // const [navbar, setNavbar] = useState(false)
+  // const changeBackground = () => {
+  //   if (window.scrollY > 5) {
+  //     setNavbar(true)
+  //   } else {
+  //     setNavbar(false)
+  //   }
+  // }
 
-  window.addEventListener('scroll', changeBackground)
+  // window.addEventListener('scroll', changeBackground)
   const [clicked, setClicked] = useState(false)
 
   const handleClick = () => {
@@ -28,7 +28,8 @@ const Header = () => {
         },
       }}
       component='header'
-      className={navbar ? 'header active' : 'header'}
+      // className={navbar ? 'header active' : 'header'}
+      className='header'
     >
       <div className='header__shell'>
         <div>
@@ -46,12 +47,12 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href='/' className='nav__item'>
+              <a href='#business' className='nav__item'>
                 Business
               </a>
             </li>
             <li>
-              <a href='/' className='nav__item'>
+              <a href='#about' className='nav__item'>
                 About
               </a>
             </li>

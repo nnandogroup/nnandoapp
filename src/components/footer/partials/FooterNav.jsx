@@ -35,10 +35,9 @@ const FooterNav = () => {
             sx={{
               color: '#000',
               padding: '5px 10px',
-              borderRadius: '4px',
               textAlign: 'center',
               '&:hover': {
-                background: '#1068ee',
+                color: '#1068ee',
               },
             }}
             href='/'
@@ -63,9 +62,8 @@ const FooterNav = () => {
               color: '#000',
               padding: '5px 10px',
               textAlign: 'center',
-              borderRadius: '4px',
               '&:hover': {
-                background: '#1068ee',
+                color: '#1068ee',
               },
             }}
             href='/'
@@ -89,10 +87,9 @@ const FooterNav = () => {
             sx={{
               color: '#000',
               padding: '5px 10px',
-              borderRadius: '4px',
               textAlign: 'center',
               '&:hover': {
-                background: '#1068ee',
+                color: '#1068ee',
               },
             }}
             href='/'
