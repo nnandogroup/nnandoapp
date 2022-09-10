@@ -30,7 +30,7 @@ const Home = () => {
         title='Real Estate'
         text=' We are a fast growing multi-faceted organisation with business
               tentacles in several industries to bring top-notch services.'
-        btntext='Go to Nnando Real Estate'
+        btntext='Go to Nnando Estate'
         btnlink='estate.nnando.com'
       />
       <Business

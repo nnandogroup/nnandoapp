@@ -8,13 +8,14 @@ const BusinessHeader = () => {
       <Typography
         sx={{
           color: 'black',
-          fontSize: '1.5rem',
-          fontWeight: '600',
+          fontSize: '2rem',
+          fontWeight: '700',
           lineHeight: '1.5',
           marginTop: '6rem',
           marginBottom: '-16px',
           fontFamily: 'Barlow',
           textAlign: 'center',
+          textDecoration: 'underline',
           [theme.breakpoints.down('sm')]: {
             marginBottom: 0,
           },
