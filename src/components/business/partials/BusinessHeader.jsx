@@ -15,7 +15,6 @@ const BusinessHeader = () => {
           marginBottom: '-16px',
           fontFamily: 'Barlow',
           textAlign: 'center',
-          textDecoration: 'underline',
           [theme.breakpoints.down('sm')]: {
             marginBottom: 0,
           },

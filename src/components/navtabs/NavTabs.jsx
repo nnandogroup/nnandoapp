@@ -1,51 +1,8 @@
 import { Box, Button, Typography, useTheme } from '@mui/material'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-
-const TabsPanelHeading = ({ children }) => {
-  return (
-    <Typography
-      variant='h5'
-      color='initial'
-      sx={{
-        textDecoration: 'underline solid #1068ee 5px',
-        mb: '30px',
-        fontWeight: '500',
-      }}
-    >
-      {children}
-    </Typography>
-  )
-}
-
-const TabPanelBody = ({ children }) => {
-  return (
-    <Typography
-      variant='body1'
-      color='initial'
-      sx={{
-        mb: '20px',
-        fontWeight: '500',
-      }}
-    >
-      {children}
-    </Typography>
-  )
-}
-
-const TabPanelButton = ({ children, link, disabled }) => {
-  return (
-    <Button
-      href={link}
-      disabled={disabled}
-      variant='contained'
-      disableElevation
-      size='large'
-      color='primary'
-    >
-      {children}
-    </Button>
-  )
-}
+import BusinessNavHeading from '../business/partials/BusinessNavHeading'
+import BusinessButton from '../business/partials/BusinessButton'
+import BusinessText from '../business/partials/BusinessText'
 
 const NavTabs = () => {
   const theme = useTheme()
@@ -85,15 +42,15 @@ const NavTabs = () => {
             }}
           />
           <Box>
-            <TabsPanelHeading>Agriculture</TabsPanelHeading>
-            <TabPanelBody>
+            <BusinessNavHeading>Agriculture</BusinessNavHeading>
+            <BusinessText>
               We are a fast growing multi-faceted organisation with business
               <br />
               tentacles in several industries to bring top-notch services
-            </TabPanelBody>
-            <TabPanelButton link={'farm.nnando.com'}>
+            </BusinessText>
+            <BusinessButton link={'farm.nnando.com'}>
               Goto Nnando Farms
-            </TabPanelButton>
+            </BusinessButton>
           </Box>
         </TabPanel>
         <TabPanel>
@@ -108,15 +65,15 @@ const NavTabs = () => {
             }}
           />
           <Box>
-            <TabsPanelHeading>Real Estate</TabsPanelHeading>
-            <TabPanelBody>
+            <BusinessNavHeading>Real Estate</BusinessNavHeading>
+            <BusinessText>
               We are a fast growing multi-faceted organisation with business
               <br />
               tentacles in several industries to bring top-notch services
-            </TabPanelBody>
-            <TabPanelButton link={'estate.nnando.com'} disabled>
+            </BusinessText>
+            <BusinessButton link={'estate.nnando.com'} disabled>
               Goto Nnando Estate
-            </TabPanelButton>
+            </BusinessButton>
           </Box>
         </TabPanel>
         <TabPanel>
@@ -131,15 +88,15 @@ const NavTabs = () => {
             }}
           />
           <Box>
-            <TabsPanelHeading>Lifestyle & Entertainment</TabsPanelHeading>
-            <TabPanelBody>
+            <BusinessNavHeading>Lifestyle & Entertainment</BusinessNavHeading>
+            <BusinessText>
               We are a fast growing multi-faceted organisation with business
               <br />
               tentacles in several industries to bring top-notch services
-            </TabPanelBody>
-            <TabPanelButton link={'lifestyle.nnando.com'} disabled>
+            </BusinessText>
+            <BusinessButton link={'lifestyle.nnando.com'} disabled>
               Goto Nnando Lifestyle
-            </TabPanelButton>
+            </BusinessButton>
           </Box>
         </TabPanel>
         <TabPanel>
@@ -154,15 +111,15 @@ const NavTabs = () => {
             }}
           />
           <Box>
-            <TabsPanelHeading>Oil & Gas</TabsPanelHeading>
-            <TabPanelBody>
+            <BusinessNavHeading>Oil & Gas</BusinessNavHeading>
+            <BusinessText>
               We are a fast growing multi-faceted organisation with business
               <br />
               tentacles in several industries to bring top-notch services
-            </TabPanelBody>
-            <TabPanelButton link={'oil.nnando.com'} disabled>
+            </BusinessText>
+            <BusinessButton link={'oil.nnando.com'} disabled>
               Goto Nnando Oil
-            </TabPanelButton>
+            </BusinessButton>
           </Box>
         </TabPanel>
         <TabPanel>
@@ -177,15 +134,15 @@ const NavTabs = () => {
             }}
           />
           <Box>
-            <TabsPanelHeading>Health Care</TabsPanelHeading>
-            <TabPanelBody>
+            <BusinessNavHeading>Health Care</BusinessNavHeading>
+            <BusinessText>
               We are a fast growing multi-faceted organisation with business
               <br />
               tentacles in several industries to bring top-notch services
-            </TabPanelBody>
-            <TabPanelButton link={'care.nnando.com'} disabled>
+            </BusinessText>
+            <BusinessButton link={'care.nnando.com'} disabled>
               Goto Nnando Care
-            </TabPanelButton>
+            </BusinessButton>
           </Box>
         </TabPanel>
       </Tabs>

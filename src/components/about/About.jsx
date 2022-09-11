@@ -19,6 +19,7 @@ const About = () => {
           padding: '4rem',
         },
       }}
+      id='about'
     >
       <Box
         sx={{
