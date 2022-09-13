@@ -12,11 +12,12 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        height: '100vh',
+        height: '100%',
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(${require('../../assets/images/HeroImage.webp')})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
+        paddingBlock: '4rem',
       }}
     >
       <Box
@@ -33,9 +34,6 @@ const Hero = () => {
           [theme.breakpoints.down('md')]: {
             px: '20px',
           },
-          [theme.breakpoints.down('sm')]: {
-            Height: '400px',
-          },
         }}
       >
         <Box>
@@ -47,7 +45,7 @@ const Hero = () => {
               fontFamily: 'Barlow',
               height: '3rem',
               [theme.breakpoints.down('sm')]: {
-                marginTop: '4rem',
+                // marginTop: '4rem',
               },
             }}
           >
