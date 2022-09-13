@@ -1,4 +1,4 @@
-import { useTheme, Box, Button } from '@mui/material'
+import { useTheme, Box } from '@mui/material'
 import { businessDescription } from '../../../data/businessDescription'
 import BusinessButton from './BusinessButton'
 
@@ -8,7 +8,7 @@ const BusinessCards = () => {
   return (
     <Box
       sx={{
-        padding: '2rem',
+        padding: '1rem',
         [theme.breakpoints.up('md')]: {
           display: 'none',
         },

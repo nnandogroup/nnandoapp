@@ -11,7 +11,7 @@ export const businessDescription = [
     ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'farm.nnando.com',
-    buttonText: 'Goto Nnnando Farms',
+    buttonText: 'Go to Nnando Farms',
     image: farmLogo,
     status: false,
   },
@@ -21,7 +21,7 @@ export const businessDescription = [
     ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'estate.nnando.com',
-    buttonText: 'Goto Nnnando Estate',
+    buttonText: 'Go to Nnando Estate',
     image: realEstateLogo,
     status: true,
   },
@@ -31,7 +31,7 @@ export const businessDescription = [
     ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'lifestyle.nnando.com',
-    buttonText: 'Goto Nnnando Lifestyle',
+    buttonText: 'Go to Nnando Lifestyle',
     image: lifeStyleLogo,
     status: true,
   },
@@ -41,7 +41,7 @@ export const businessDescription = [
     ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'oil.nnando.com',
-    buttonText: 'Goto Nnnando Oil',
+    buttonText: 'Go to Nnando Oil',
     image: OilAndGasLogo,
     status: true,
   },
@@ -51,7 +51,7 @@ export const businessDescription = [
     ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'care.nnando.com',
-    buttonText: 'Goto Nnnando Care',
+    buttonText: 'Go to Nnando Care',
     image: healthLogo,
     status: true,
   },
