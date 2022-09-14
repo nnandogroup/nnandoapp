@@ -45,7 +45,7 @@ const BusinessNavTab = () => {
             <Box>
               <BusinessNavHeading>{data.title}</BusinessNavHeading>
               <BusinessText>{data.body}</BusinessText>
-              <BusinessButton link={data.link} disab>
+              <BusinessButton link={data.link} disabled={data.status}>
                 {data.buttonText}
               </BusinessButton>
             </Box>

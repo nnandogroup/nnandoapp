@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        height: '100%',
+        height: '90vh',
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(${require('../../assets/images/HeroImage.webp')})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
