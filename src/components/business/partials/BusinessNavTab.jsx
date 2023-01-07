@@ -25,12 +25,12 @@ const BusinessNavTab = () => {
     >
       <Tabs>
         <TabList>
-          {businessDescription.map((data) => (
-            <Tab>{data.title}</Tab>
+          {businessDescription.map((data, index) => (
+            <Tab key={index}>{data.title}</Tab>
           ))}
         </TabList>
-        {businessDescription.map((data) => (
-          <TabPanel>
+        {businessDescription.map((data, index) => (
+          <TabPanel key={index}>
             <Box
               component='img'
               src={data.image}

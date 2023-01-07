@@ -8,7 +8,6 @@ export const businessDescription = [
   {
     title: 'Agriculture',
     body: ` We are a fast growing multi-faceted organisation with business
-    ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'farm.nnando.com',
     buttonText: 'Go to Nnando Farms',
@@ -18,7 +17,6 @@ export const businessDescription = [
   {
     title: 'Real Estate',
     body: ` We are a fast growing multi-faceted organisation with business
-    ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'estate.nnando.com',
     buttonText: 'Go to Nnando Estate',
@@ -28,7 +26,6 @@ export const businessDescription = [
   {
     title: 'Lifestyle & Entertainment',
     body: ` We are a fast growing multi-faceted organisation with business
-    ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'lifestyle.nnando.com',
     buttonText: 'Go to Nnando Lifestyle',
@@ -38,7 +35,6 @@ export const businessDescription = [
   {
     title: 'Oil & Gas',
     body: ` We are a fast growing multi-faceted organisation with business
-    ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'oil.nnando.com',
     buttonText: 'Go to Nnando Oil',
@@ -48,7 +44,6 @@ export const businessDescription = [
   {
     title: 'Health Care',
     body: ` We are a fast growing multi-faceted organisation with business
-    ${(<br />)}
     tentacles in several industries to bring top-notch services`,
     link: 'care.nnando.com',
     buttonText: 'Go to Nnando Care',

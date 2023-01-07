@@ -24,7 +24,7 @@ const Header = () => {
     <Box
       sx={{
         [theme.breakpoints.down('sm')]: {
-          paddingLeft: '1rem',
+          px: '1rem',
         },
       }}
       component='header'
