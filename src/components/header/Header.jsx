@@ -21,15 +21,7 @@ const Header = () => {
   }
 
   return (
-    <Box
-      sx={{
-        [theme.breakpoints.down('sm')]: {
-          px: '1rem',
-        },
-      }}
-      component='header'
-      className={navbar ? 'header active' : 'header'}
-    >
+    <Box component='header' className={navbar ? 'header active' : 'header'}>
       <div className='header__shell'>
         <div>
           <img
